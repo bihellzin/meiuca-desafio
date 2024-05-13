@@ -7,9 +7,9 @@ import {
 } from "./CardContent.styled";
 import PropTypes from "prop-types";
 
-export const CardContent = ({ title, subtitle, paragraph, url }) => {
+export const CardContent = ({ title, subtitle, paragraph, url, ...props }) => {
   return (
-    <Shape>
+    <Shape {...props}>
       <Heading>{title}</Heading>
       <Subtitle>{subtitle}</Subtitle>
       <Paragraph>
